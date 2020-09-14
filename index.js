@@ -1,13 +1,15 @@
-let str = prompt("Type_Password")
+let x = prompt("Type_Password")
 
-if (str.length >= 8){
+if (x.length === 7){
+    alert('korrekt')
+}
+
+while (x.length > 7){
     alert('för långt')
+    x = prompt('try again')
 }
 
-if (str.length <= 6){
-    alert('Too short m8')
-}
-
-if (str.length = 7){
-    alert('Korrekt')
+while (x.length < 7){
+    alert('för kort')
+    x = prompt('try again')
 }
